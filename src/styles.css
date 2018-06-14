@@ -1,1 +1,158 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+  background-color: #deecde;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 0;
+  padding: 0 0;
+}
+  
+.app {
+  border: 2px solid #8c9995;
+  border-radius: 15px;
+  border-style: dashed;
+  margin: 10px;
+  position: absolute;
+  width: calc(100% - 20px);
+}
+  
+.header {
+  border-bottom: 2px solid #8c9995;
+  border-bottom-style: dashed;
+  color: #42b954;
+  text-align: center;
+}
+  
+.h2 {
+  color: darkgreen;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+  
+.sidebar {
+  border-right: 2px solid #8c9995;
+  border-right-style: dashed;
+  float: left;
+  min-width: 200px;
+  width: 20%;
+}
+  
+.success {
+  background: #a42f2f
+}
+  
+.content {
+  margin-left: calc(20% + 10px);
+  margin-top: 0;
+}
+  
+.menu {
+  color: green;
+  margin: 0;
+  padding: 5px;
+}
+  
+.menu__a {
+  text-decoration: none;
+}
+  
+.menu__item {
+  float: none;
+}
+  
+.menu__item_num {
+  background: silver;
+  border-radius: 50%;
+  color: #a42f2f;
+  float: left;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+  
+.menu__item:hover:first-child {
+  background: #363b37;
+  color: rgb(211, 227, 230);
+}
+  
+.menu__item_text {
+  line-height: 45px;
+  margin-left: 50px;
+}
+  
+.example {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+  
+.btn {
+  background-color: #3d6c44;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 5px;
+  padding: 10px 5px;
+}
+  
+.btn_remov {
+  background-color: #a42f2f;
+  padding: 1px 5px;
+}
+
+.btn_table {
+  margin: 3px;
+  padding: 0;
+  width: 70px;
+}
+  
+.input {
+  background-color: #416f72;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 5px;
+  padding: 10px 5px;
+}
+  
+.input::-webkit-input-placeholder {
+  color: white
+}
+  
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  counter-reset: schetchik;
+  padding: 0 10px;
+}
+  
+.table__col {
+  border: 1px solid black;
+  padding: 0 10px;
+}
+  
+.table__col_head {
+  font-weight: bold;
+}
+  
+.table .num {
+  counter-increment: schetchik;
+}
+  
+.table .num:before {
+  content: counter(schetchik);
+}
+  
+.select {
+  background-color: #3d6c44;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 5px;
+  padding: 10px 5px;
+}
