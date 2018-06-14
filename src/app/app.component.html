@@ -4,8 +4,8 @@
   </div>
   <div class="sidebar">
     <div class="menu">
-      <div ng-repeat="item in menu">
-        {{ item.text }}
+      <div *ngFor="let item of menu">
+        {{ item.example }} - {{ item.text }}
       </div>
     </div>
   </div>
