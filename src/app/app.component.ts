@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  msg = 'Учимся Vue а за одно и css с js';
+  msg = 'Учимся Angular а за одно и css с js';
   menu = [
     { example: 1, text: 'Hello World!' },
     { example: 2, text: 'Динамически связанные свойства' },
