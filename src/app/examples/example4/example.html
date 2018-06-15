@@ -1,0 +1,20 @@
+<h2 class="h2">Урок 4. Циклы *ngFor</h2>
+    <p>С *ngFor я уже познакомился, когда делал меню</p>
+      <ol>
+        <li *ngFor="let item of todos">
+           Наименование: {{ item.name }} Цена: {{ item.price }}
+        </li>
+      </ol>
+      <br>
+      <table class="table">
+        <tr>
+          <td class="table__col table__col_head">№</td>
+          <td class="table__col table__col_head">Наименование</td>
+          <td class="table__col table__col_head">Цена</td>
+        </tr>
+        <tr *ngFor="let item of todos">
+          <td class="table__col num"></td>
+          <td class="table__col">{{ item.name }}</td>         
+          <td class="table__col">{{ item.price }}</td>
+        </tr>
+</table>
