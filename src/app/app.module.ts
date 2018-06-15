@@ -11,6 +11,9 @@ import { Example3Component } from './examples/example3/example';
 import { Example4Component } from './examples/example4/example';
 import { Example5Component } from './examples/example5/example';
 import { Example6Component } from './examples/example6/example';
+import { Example7Component } from './examples/example7/example';
+import { TodoItemComponent } from './todoitem/todoitem';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +22,8 @@ const appRoutes: Routes = [
   { path: '3', component: Example3Component },
   { path: '4', component: Example4Component },
   { path: '5', component: Example5Component },
-  { path: '6', component: Example6Component }
+  { path: '6', component: Example6Component },
+  { path: '7', component: Example7Component }
 ];
 
 @NgModule({
@@ -31,7 +35,9 @@ const appRoutes: Routes = [
     Example3Component,
     Example4Component,
     Example5Component,
-    Example6Component
+    Example6Component,
+    Example7Component,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,

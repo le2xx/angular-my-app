@@ -13,7 +13,7 @@ export class AppComponent {
     { example: 3, text: 'Условия *ngIf' },
     { example: 4, text: 'Циклы *ngFor' },
     { example: 5, text: 'События (click)' },
-    { example: 6, text: 'Cвязывание элементов форм v-model' },
+    { example: 6, text: 'Cвязывание элементов форм ngModel' },
     { example: 7, text: 'Компоненты' },
     { example: 8, text: 'CRUD' },
     { example: 9, text: 'Часы' }
