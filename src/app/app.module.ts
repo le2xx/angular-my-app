@@ -4,18 +4,21 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { Example1 } from './examples/example-1/app.example-1';
+import { Example1Component } from './examples/example1/example1';
+import { Example2Component } from './examples/example2/example2';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'ex1', component: Example1 }
+  { path: '1', component: Example1Component },
+  { path: '2', component: Example2Component }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    Example1,
+    Example1Component,
+    Example2Component,
   ],
   imports: [
     BrowserModule,

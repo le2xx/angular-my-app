@@ -5,7 +5,10 @@
   <div class="sidebar">
     <div class="menu">
       <div *ngFor="let item of menu">
-        {{ item.example }} - {{ item.text }}
+        <a [routerLink]="['/', item.example]">
+          <div class="menu menu__item menu__item_num">{{ item.example }}</div>
+          <div class="menu menu__item menu__item_text">{{ item.text }}</div>
+        </a>
       </div>
     </div>
   </div>
