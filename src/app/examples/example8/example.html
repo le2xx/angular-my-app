@@ -1,0 +1,57 @@
+
+    <h2 class="h2">Урок 8. CRUD</h2>
+    <p>Фильтр:</p>
+    <div>
+      <select class="select" [(ngModel)]="selected" (click)="filterAutoName(selected)">
+        <option class="select" disabled value="">Выберите марку</option>
+        <option class="select" *ngFor="let item of select">{{ item }}</option>
+      </select>
+      <button class="btn" (click)="filterAuto()">Фильтр</button>
+    </div>
+    <div>
+      <p>Добавить машину:</p>
+      <input class="input" [(ngModel)]="auto.name" placeholder="Марка">
+      <input class="input" [(ngModel)]="auto.model" placeholder="Модель">
+      <input class="input" type="number" pattern="\d+" [(ngModel)]="auto.price" placeholder="Цена">
+      <input class="input" type="number" pattern="\d+" min="1900" max="2100" value="2018" 
+      [(ngModel)]="auto.year" placeholder="Год">
+      <button class="btn" (click)="addAuto(auto)">Добавить машину</button>
+    </div>
+    <table class="table">
+      <tr>
+        <td class="table__col">
+          <button class="btn btn_table" (click)="sortAuto('name', 'up')">↑</button><br>
+          <button class="btn btn_table" (click)="sortAuto('name', 'dowm')">↓</button>
+        </td>
+        <td class="table__col">
+          <button class="btn btn_table" (click)="sortAuto('model', 'up')">↑</button><br>
+          <button class="btn btn_table" (click)="sortAuto('model', 'dowm')">↓</button>
+        </td>
+        <td class="table__col">
+          <button class="btn btn_table" (click)="sortAuto('price', 'up')">↑</button><br>
+          <button class="btn btn_table" (click)="sortAuto('price', 'dowm')">↓</button>
+        </td>
+        <td class="table__col">
+          <button class="btn btn_table" (click)="sortAuto('year', 'up')">↑</button><br>
+          <button class="btn btn_table" (click)="sortAuto('year', 'dowm')">↓</button>
+        </td>
+        <td class="table__col">
+          <button class="btn" (click)="reset()">Вернуть все как было</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="table__col table__col_head">Марка</td>
+        <td class="table__col table__col_head">Модель</td>
+        <td class="table__col table__col_head">Цена</td>
+        <td class="table__col table__col_head">Год</td>
+        <td class="table__col table__col_head"></td>
+      </tr>
+      <tr *ngFor="let item of todos">
+        <td class="table__col">{{ item.name }}</td>         
+        <td class="table__col">{{ item.model }}</td>
+        <td class="table__col">{{ item.price }}</td>         
+        <td class="table__col">{{ item.year }}</td>
+        <td class="table__col"><button class="btn btn_remov" (click)="removAuto(item)">Удалить</button></td>
+      </tr>
+    </table>
+    <p>Всего машин в списке: {{ sum }} шт.</p>

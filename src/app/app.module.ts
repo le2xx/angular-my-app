@@ -13,7 +13,8 @@ import { Example5Component } from './examples/example5/example';
 import { Example6Component } from './examples/example6/example';
 import { Example7Component } from './examples/example7/example';
 import { TodoItemComponent } from './todoitem/todoitem';
-
+import { Example8Component } from './examples/example8/example';
+import { Example9Component } from './examples/example9/example';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,7 +24,9 @@ const appRoutes: Routes = [
   { path: '4', component: Example4Component },
   { path: '5', component: Example5Component },
   { path: '6', component: Example6Component },
-  { path: '7', component: Example7Component }
+  { path: '7', component: Example7Component },
+  { path: '8', component: Example8Component },
+  { path: '9', component: Example9Component }
 ];
 
 @NgModule({
@@ -37,7 +40,9 @@ const appRoutes: Routes = [
     Example5Component,
     Example6Component,
     Example7Component,
-    TodoItemComponent
+    TodoItemComponent,
+    Example8Component,
+    Example9Component,
   ],
   imports: [
     BrowserModule,
