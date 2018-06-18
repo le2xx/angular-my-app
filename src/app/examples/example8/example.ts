@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 const json = [
-    { name: 'BMV', model: 'X5', price: 34000, year: 2015 },
+    { name: 'BMW', model: 'X5', price: 34000, year: 2015 },
     { name: 'AUDI', model: 'A3', price: 12000, year: 2017 },
     { name: 'Hyundai', model: 'Solaris', price: 20000, year: 2013 },
     { name: 'KIA', model: 'Rio', price: 14600, year: 2015 },
     { name: 'AUDI', model: 'Q3', price: 17500, year: 2014 },
-    { name: 'BMV', model: 'X6', price: 39000, year: 2018 },
+    { name: 'BMW', model: 'X6', price: 39000, year: 2018 },
     { name: 'KIA', model: 'Cerato', price: 11000, year: 2009 },
     { name: 'Toyota', model: 'Carola', price: 2100, year: 2007 },
     { name: 'AUDI', model: 'A6', price: 12500, year: 2011 },

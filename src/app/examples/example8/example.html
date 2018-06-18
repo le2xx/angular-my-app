@@ -2,7 +2,7 @@
     <h2 class="h2">Урок 8. CRUD</h2>
     <p>Фильтр:</p>
     <div>
-      <select class="select" [(ngModel)]="selected" (click)="filterAutoName(selected)">
+      <select class="select" [(ngModel)]="selected" (change)="filterAutoName(selected)">
         <option class="select" disabled value="">Выберите марку</option>
         <option class="select" *ngFor="let item of select">{{ item }}</option>
       </select>
